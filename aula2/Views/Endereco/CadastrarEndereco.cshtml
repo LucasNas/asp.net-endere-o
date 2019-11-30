@@ -1,0 +1,20 @@
+﻿@model Endereco
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Cadastrar Endereço</title>
+</head>
+<body>
+    <h3>Buscar e cadastrar endereço</h3>
+    <form asp-action="CadastrarEndereco"
+          asp-controller="Endereco"
+          method="post">
+
+        <input type="text" asp-for="Cep" /><br />
+        <input type="submit" value="Buscar CEP" />
+    </form>
+</body>
+</html>
